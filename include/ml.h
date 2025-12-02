@@ -1,12 +1,15 @@
 #ifndef ML_H
 #define ML_H
 
-#include "dataset.h"
+#include <stdio.h>
+#include <math.h>
+#include "utils.h"
 #include "stats.h"
 
-void data_normalization(void);
-void find_outliers(void);//Outlier detection helper.
-void data_splitting(void);//Train/test splitting.
-void simple_prediction(void);Simple prediction logic
+void data_normalization();
+void find_outliers();
+void data_splitting();
+void simple_prediction();
 
-#endif /* ML_H */
+#endif
+
