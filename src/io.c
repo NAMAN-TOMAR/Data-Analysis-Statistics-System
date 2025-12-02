@@ -175,8 +175,11 @@ void visualization_menu(void) {
     for (int i=0;i<dataset_count;i++) printf("%d. %s\n", i+1, datasets[i].variable_name);
     int sel; scanf("%d",&sel); sel--;
     if (sel<0||sel>=dataset_count) { printf("Invalid selection!\n"); return; }
+    printf("\n======== HISTOGRAM FOR %s ========\n",
+           datasets[sel].variable_name);
+
+    show_histogram(datasets[sel].data, datasets[sel].count);
     
-    void show_histogram(double arr[], int n);
 
 }
 
