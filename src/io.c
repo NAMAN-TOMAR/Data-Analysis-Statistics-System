@@ -3,10 +3,14 @@
 #include <string.h>
 #include <time.h>
 #include <math.h>
-#include "dataset.h"
-#include "io.h"
-#include "utils.h"
-#include "stats.h"
+#include "../include/dataset.h"
+#include "../include/utils.h"
+#include "../include/stats.h"
+#include "../include/ml.h"
+#include "../include/visualization.h"
+#include "../include/io.h"
+
+
 
 //Global dataset storage
 
