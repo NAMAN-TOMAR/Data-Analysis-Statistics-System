@@ -8,7 +8,7 @@
  * I’ve written fancier ones before but honestly,
  * this gets the job done and is easier to debug.
  */
-void show_histogram(Dataset *data) {
+void show_histogram(double arr[], int n) {
     if (data->count == 0) { printf("Dataset empty.\n"); return; }
 
     printf("\n======== HISTOGRAM FOR %s ========\n", data->variable_name);
